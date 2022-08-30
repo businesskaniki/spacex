@@ -3,7 +3,7 @@ import { Route, Routes, NavLink } from 'react-router-dom';
 import Rockets from './Rockets';
 import favicon from './Assets/saturn.png';
 import Profile from './Profile';
-import Missions from './Missions';
+import Missions from './mission/Missions';
 
 const Nav = () => (
   <>
@@ -27,6 +27,7 @@ const Nav = () => (
       </nav>
     </header>
     <Routes>
+      <Route path="/" element={<Rockets />} />
       <Route path="/Rockets" element={<Rockets />} />
       <Route path="/Missions" element={<Missions />} />
       <Route path="/profile" element={<Profile />} />
