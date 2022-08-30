@@ -9,7 +9,6 @@ export const getMission = createAsyncThunk(
   async () => {
     const data = await fetch(`${BASE_URL}`);
     const response = await data.json();
-    console.log(response);
     return response;
   },
 );
